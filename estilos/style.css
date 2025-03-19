@@ -20,16 +20,18 @@ main{
 }
 
 section#login{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: widht 0.3s height 0.3s; 
+    transition-timing-function: ease; 
 }
 
 section#login > div#imagem{
@@ -45,5 +47,66 @@ section#login > div#formulario{
     padding: 10px;
 }
 
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+div.campo{
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #265553;
+}
+
+a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #265553;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.botao:hover{
+    background-color: #61cdc9;
+}
+
+a.botao > span{
+    font-size: 0.8em;
+}
 
 
